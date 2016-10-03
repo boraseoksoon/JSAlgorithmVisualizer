@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "arrayList.h"
-#import "SingleLinkedList.hpp"
+#import "SingleLinkedList.h"
 
 @interface ViewController ()
 
@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    LinkedList list;
+    SingleLinkedList list;
     
     list.addValue(5);
     list.addValue(10);
