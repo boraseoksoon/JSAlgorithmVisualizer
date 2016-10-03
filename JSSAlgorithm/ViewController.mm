@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "arrayList.h"
+#import "SingleLinkedList.hpp"
 
 @interface ViewController ()
 
@@ -19,6 +20,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    LinkedList list;
+    
+    list.addValue(5);
+    list.addValue(10);
+    list.addValue(20);
+    
+    cout << list.popValue() << endl;
+    cout << list.popValue() << endl;
+    cout << list.popValue() << endl;
+    
+    /*
     int i = 0;
     int arrayCount = 0;
     ArrayList* pList = NULL;
@@ -54,6 +66,7 @@
         
         deleteArrayList(pList);
     }
+    */
 }
 
 
