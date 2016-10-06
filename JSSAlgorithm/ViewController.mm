@@ -15,6 +15,12 @@
 @end
 
 @implementation ViewController
+- (IBAction)enterDatastructureAction:(id)sender {
+    
+}
+- (IBAction)enterAlgorithmAction:(id)sender {
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
