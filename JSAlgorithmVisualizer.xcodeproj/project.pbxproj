@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4742F8071DA228DC0060A96A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4742F8061DA228DC0060A96A /* libc++.tbd */; };
+		4758B7851DA15691008653D2 /* SingleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B7831DA15691008653D2 /* SingleLinkedList.cpp */; };
+		4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */; };
+		4758B7901DA15BF4008653D2 /* CircularLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78E1DA15BF4008653D2 /* CircularLinkedList.cpp */; };
+		4758B7961DA15C35008653D2 /* DoubleCircularLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4758B7951DA15C35008653D2 /* DoubleCircularLinkedList.m */; };
+		47EC8AFD1D9E53E900670F34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8AFC1D9E53E900670F34 /* main.m */; };
+		47EC8B001D9E53E900670F34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8AFF1D9E53E900670F34 /* AppDelegate.m */; };
+		47EC8B031D9E53E900670F34 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8B021D9E53E900670F34 /* ViewController.mm */; };
+		47EC8B061D9E53E900670F34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EC8B041D9E53E900670F34 /* Main.storyboard */; };
+		47EC8B081D9E53E900670F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47EC8B071D9E53E900670F34 /* Assets.xcassets */; };
+		47EC8B0B1D9E53E900670F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EC8B091D9E53E900670F34 /* LaunchScreen.storyboard */; };
+		47EC8B161D9E53E900670F34 /* JSSAlgorithmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8B151D9E53E900670F34 /* JSSAlgorithmTests.m */; };
+		47EC8B211D9E53E900670F34 /* JSSAlgorithmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8B201D9E53E900670F34 /* JSSAlgorithmUITests.m */; };
+		47EC8B3C1D9E546700670F34 /* arrayList.c in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8B3A1D9E546700670F34 /* arrayList.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47EC8B121D9E53E900670F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EC8AF01D9E53E900670F34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47EC8AF71D9E53E900670F34;
+			remoteInfo = JSSAlgorithm;
+		};
+		47EC8B1D1D9E53E900670F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EC8AF01D9E53E900670F34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47EC8AF71D9E53E900670F34;
+			remoteInfo = JSSAlgorithm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4742F8061DA228DC0060A96A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4758B7831DA15691008653D2 /* SingleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingleLinkedList.cpp; sourceTree = "<group>"; };
+		4758B7841DA15691008653D2 /* SingleLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLinkedList.h; sourceTree = "<group>"; };
+		4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleLinkedList.cpp; sourceTree = "<group>"; };
+		4758B78C1DA15BEC008653D2 /* DoubleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DoubleLinkedList.hpp; sourceTree = "<group>"; };
+		4758B78E1DA15BF4008653D2 /* CircularLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularLinkedList.cpp; sourceTree = "<group>"; };
+		4758B78F1DA15BF4008653D2 /* CircularLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularLinkedList.hpp; sourceTree = "<group>"; };
+		4758B7941DA15C35008653D2 /* DoubleCircularLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleCircularLinkedList.h; sourceTree = "<group>"; };
+		4758B7951DA15C35008653D2 /* DoubleCircularLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleCircularLinkedList.m; sourceTree = "<group>"; };
+		47EC8AF81D9E53E900670F34 /* JSAlgorithmVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSAlgorithmVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EC8AFC1D9E53E900670F34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47EC8AFE1D9E53E900670F34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		47EC8AFF1D9E53E900670F34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		47EC8B011D9E53E900670F34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		47EC8B021D9E53E900670F34 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		47EC8B051D9E53E900670F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47EC8B071D9E53E900670F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47EC8B0A1D9E53E900670F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47EC8B0C1D9E53E900670F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EC8B111D9E53E900670F34 /* JSAlgorithmVisualizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSAlgorithmVisualizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EC8B151D9E53E900670F34 /* JSSAlgorithmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSSAlgorithmTests.m; sourceTree = "<group>"; };
+		47EC8B171D9E53E900670F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EC8B1C1D9E53E900670F34 /* JSAlgorithmVisualizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSAlgorithmVisualizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EC8B201D9E53E900670F34 /* JSSAlgorithmUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSSAlgorithmUITests.m; sourceTree = "<group>"; };
+		47EC8B221D9E53E900670F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EC8B3A1D9E546700670F34 /* arrayList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arrayList.c; sourceTree = "<group>"; };
+		47EC8B3B1D9E546700670F34 /* arrayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayList.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47EC8AF51D9E53E900670F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4742F8071DA228DC0060A96A /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EC8B0E1D9E53E900670F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EC8B191D9E53E900670F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4742F8051DA228DC0060A96A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4742F8061DA228DC0060A96A /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4758B7861DA15695008653D2 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				4758B7931DA15C24008653D2 /* DoubleCircularLinkedList */,
+				4758B7891DA156B1008653D2 /* CircularLinkedList */,
+				4758B7881DA156AA008653D2 /* DoubleLinkedList */,
+				4758B7871DA1569F008653D2 /* SingleLinkedList */,
+			);
+			name = LinkedList;
+			sourceTree = "<group>";
+		};
+		4758B7871DA1569F008653D2 /* SingleLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				4758B7831DA15691008653D2 /* SingleLinkedList.cpp */,
+				4758B7841DA15691008653D2 /* SingleLinkedList.h */,
+			);
+			name = SingleLinkedList;
+			sourceTree = "<group>";
+		};
+		4758B7881DA156AA008653D2 /* DoubleLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */,
+				4758B78C1DA15BEC008653D2 /* DoubleLinkedList.hpp */,
+			);
+			name = DoubleLinkedList;
+			sourceTree = "<group>";
+		};
+		4758B7891DA156B1008653D2 /* CircularLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				4758B78E1DA15BF4008653D2 /* CircularLinkedList.cpp */,
+				4758B78F1DA15BF4008653D2 /* CircularLinkedList.hpp */,
+			);
+			name = CircularLinkedList;
+			sourceTree = "<group>";
+		};
+		4758B7931DA15C24008653D2 /* DoubleCircularLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				4758B7941DA15C35008653D2 /* DoubleCircularLinkedList.h */,
+				4758B7951DA15C35008653D2 /* DoubleCircularLinkedList.m */,
+			);
+			name = DoubleCircularLinkedList;
+			sourceTree = "<group>";
+		};
+		4758B7971DA160D9008653D2 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4758B7861DA15695008653D2 /* LinkedList */,
+				47EC8B391D9E545A00670F34 /* ArrayList */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		4758B7981DA160F1008653D2 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		4758B7991DA160F7008653D2 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				4758B79B1DA16104008653D2 /* Dequeue */,
+				4758B79A1DA16100008653D2 /* Queue */,
+			);
+			name = Queue;
+			sourceTree = "<group>";
+		};
+		4758B79A1DA16100008653D2 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Queue;
+			sourceTree = "<group>";
+		};
+		4758B79B1DA16104008653D2 /* Dequeue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dequeue;
+			sourceTree = "<group>";
+		};
+		47EC8AEF1D9E53E900670F34 = {
+			isa = PBXGroup;
+			children = (
+				47EC8AFA1D9E53E900670F34 /* JSSAlgorithm */,
+				47EC8B141D9E53E900670F34 /* JSSAlgorithmTests */,
+				47EC8B1F1D9E53E900670F34 /* JSSAlgorithmUITests */,
+				47EC8AF91D9E53E900670F34 /* Products */,
+				4742F8051DA228DC0060A96A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		47EC8AF91D9E53E900670F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8AF81D9E53E900670F34 /* JSAlgorithmVisualizer.app */,
+				47EC8B111D9E53E900670F34 /* JSAlgorithmVisualizerTests.xctest */,
+				47EC8B1C1D9E53E900670F34 /* JSAlgorithmVisualizerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47EC8AFA1D9E53E900670F34 /* JSSAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8B351D9E541B00670F34 /* Controller */,
+				47EC8B341D9E541700670F34 /* View */,
+				47EC8B331D9E541200670F34 /* Model */,
+				47EC8B2E1D9E53F000670F34 /* Core */,
+				47EC8AFB1D9E53E900670F34 /* Supporting Files */,
+			);
+			path = JSSAlgorithm;
+			sourceTree = "<group>";
+		};
+		47EC8AFB1D9E53E900670F34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8B361D9E543400670F34 /* UserInterface */,
+				47EC8AFC1D9E53E900670F34 /* main.m */,
+				47EC8B0C1D9E53E900670F34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47EC8B141D9E53E900670F34 /* JSSAlgorithmTests */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8B151D9E53E900670F34 /* JSSAlgorithmTests.m */,
+				47EC8B171D9E53E900670F34 /* Info.plist */,
+			);
+			path = JSSAlgorithmTests;
+			sourceTree = "<group>";
+		};
+		47EC8B1F1D9E53E900670F34 /* JSSAlgorithmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8B201D9E53E900670F34 /* JSSAlgorithmUITests.m */,
+				47EC8B221D9E53E900670F34 /* Info.plist */,
+			);
+			path = JSSAlgorithmUITests;
+			sourceTree = "<group>";
+		};
+		47EC8B2E1D9E53F000670F34 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8B321D9E540900670F34 /* Algorithm */,
+				47EC8B2F1D9E53F500670F34 /* DataStructure */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		47EC8B2F1D9E53F500670F34 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8B311D9E540400670F34 /* Linear */,
+				47EC8B301D9E53FD00670F34 /* NonLinear */,
+			);
+			name = DataStructure;
+			sourceTree = "<group>";
+		};
+		47EC8B301D9E53FD00670F34 /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NonLinear;
+			sourceTree = "<group>";
+		};
+		47EC8B311D9E540400670F34 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				4758B7991DA160F7008653D2 /* Queue */,
+				4758B7981DA160F1008653D2 /* Stack */,
+				4758B7971DA160D9008653D2 /* List */,
+			);
+			name = Linear;
+			sourceTree = "<group>";
+		};
+		47EC8B321D9E540900670F34 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Algorithm;
+			sourceTree = "<group>";
+		};
+		47EC8B331D9E541200670F34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		47EC8B341D9E541700670F34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		47EC8B351D9E541B00670F34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8AFE1D9E53E900670F34 /* AppDelegate.h */,
+				47EC8AFF1D9E53E900670F34 /* AppDelegate.m */,
+				47EC8B011D9E53E900670F34 /* ViewController.h */,
+				47EC8B021D9E53E900670F34 /* ViewController.mm */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		47EC8B361D9E543400670F34 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8B381D9E544C00670F34 /* Images */,
+				47EC8B371D9E544200670F34 /* Storyboard */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		47EC8B371D9E544200670F34 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8B041D9E53E900670F34 /* Main.storyboard */,
+				47EC8B091D9E53E900670F34 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		47EC8B381D9E544C00670F34 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8B071D9E53E900670F34 /* Assets.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		47EC8B391D9E545A00670F34 /* ArrayList */ = {
+			isa = PBXGroup;
+			children = (
+				47EC8B3A1D9E546700670F34 /* arrayList.c */,
+				47EC8B3B1D9E546700670F34 /* arrayList.h */,
+			);
+			name = ArrayList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47EC8AF71D9E53E900670F34 /* JSAlgorithmVisualizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47EC8B251D9E53E900670F34 /* Build configuration list for PBXNativeTarget "JSAlgorithmVisualizer" */;
+			buildPhases = (
+				47EC8AF41D9E53E900670F34 /* Sources */,
+				47EC8AF51D9E53E900670F34 /* Frameworks */,
+				47EC8AF61D9E53E900670F34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSAlgorithmVisualizer;
+			productName = JSSAlgorithm;
+			productReference = 47EC8AF81D9E53E900670F34 /* JSAlgorithmVisualizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47EC8B101D9E53E900670F34 /* JSAlgorithmVisualizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47EC8B281D9E53E900670F34 /* Build configuration list for PBXNativeTarget "JSAlgorithmVisualizerTests" */;
+			buildPhases = (
+				47EC8B0D1D9E53E900670F34 /* Sources */,
+				47EC8B0E1D9E53E900670F34 /* Frameworks */,
+				47EC8B0F1D9E53E900670F34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47EC8B131D9E53E900670F34 /* PBXTargetDependency */,
+			);
+			name = JSAlgorithmVisualizerTests;
+			productName = JSSAlgorithmTests;
+			productReference = 47EC8B111D9E53E900670F34 /* JSAlgorithmVisualizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47EC8B1B1D9E53E900670F34 /* JSAlgorithmVisualizerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47EC8B2B1D9E53E900670F34 /* Build configuration list for PBXNativeTarget "JSAlgorithmVisualizerUITests" */;
+			buildPhases = (
+				47EC8B181D9E53E900670F34 /* Sources */,
+				47EC8B191D9E53E900670F34 /* Frameworks */,
+				47EC8B1A1D9E53E900670F34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47EC8B1E1D9E53E900670F34 /* PBXTargetDependency */,
+			);
+			name = JSAlgorithmVisualizerUITests;
+			productName = JSSAlgorithmUITests;
+			productReference = 47EC8B1C1D9E53E900670F34 /* JSAlgorithmVisualizerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47EC8AF01D9E53E900670F34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Seoksoon Jang";
+				TargetAttributes = {
+					47EC8AF71D9E53E900670F34 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HEGJVBK4RD;
+						ProvisioningStyle = Automatic;
+					};
+					47EC8B101D9E53E900670F34 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HEGJVBK4RD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 47EC8AF71D9E53E900670F34;
+					};
+					47EC8B1B1D9E53E900670F34 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HEGJVBK4RD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 47EC8AF71D9E53E900670F34;
+					};
+				};
+			};
+			buildConfigurationList = 47EC8AF31D9E53E900670F34 /* Build configuration list for PBXProject "JSAlgorithmVisualizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47EC8AEF1D9E53E900670F34;
+			productRefGroup = 47EC8AF91D9E53E900670F34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47EC8AF71D9E53E900670F34 /* JSAlgorithmVisualizer */,
+				47EC8B101D9E53E900670F34 /* JSAlgorithmVisualizerTests */,
+				47EC8B1B1D9E53E900670F34 /* JSAlgorithmVisualizerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47EC8AF61D9E53E900670F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EC8B0B1D9E53E900670F34 /* LaunchScreen.storyboard in Resources */,
+				47EC8B081D9E53E900670F34 /* Assets.xcassets in Resources */,
+				47EC8B061D9E53E900670F34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EC8B0F1D9E53E900670F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EC8B1A1D9E53E900670F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47EC8AF41D9E53E900670F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4758B7961DA15C35008653D2 /* DoubleCircularLinkedList.m in Sources */,
+				47EC8B031D9E53E900670F34 /* ViewController.mm in Sources */,
+				47EC8B001D9E53E900670F34 /* AppDelegate.m in Sources */,
+				47EC8AFD1D9E53E900670F34 /* main.m in Sources */,
+				4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */,
+				47EC8B3C1D9E546700670F34 /* arrayList.c in Sources */,
+				4758B7851DA15691008653D2 /* SingleLinkedList.cpp in Sources */,
+				4758B7901DA15BF4008653D2 /* CircularLinkedList.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EC8B0D1D9E53E900670F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EC8B161D9E53E900670F34 /* JSSAlgorithmTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EC8B181D9E53E900670F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EC8B211D9E53E900670F34 /* JSSAlgorithmUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47EC8B131D9E53E900670F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47EC8AF71D9E53E900670F34 /* JSAlgorithmVisualizer */;
+			targetProxy = 47EC8B121D9E53E900670F34 /* PBXContainerItemProxy */;
+		};
+		47EC8B1E1D9E53E900670F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47EC8AF71D9E53E900670F34 /* JSAlgorithmVisualizer */;
+			targetProxy = 47EC8B1D1D9E53E900670F34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47EC8B041D9E53E900670F34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47EC8B051D9E53E900670F34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47EC8B091D9E53E900670F34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47EC8B0A1D9E53E900670F34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47EC8B231D9E53E900670F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47EC8B241D9E53E900670F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47EC8B261D9E53E900670F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HEGJVBK4RD;
+				INFOPLIST_FILE = JSSAlgorithm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boraseoksoon.datastructure.JSSAlgorithm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47EC8B271D9E53E900670F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HEGJVBK4RD;
+				INFOPLIST_FILE = JSSAlgorithm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boraseoksoon.datastructure.JSSAlgorithm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		47EC8B291D9E53E900670F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HEGJVBK4RD;
+				INFOPLIST_FILE = JSSAlgorithmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boraseoksoon.datastructure.JSSAlgorithmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSAlgorithmVisualizer.app/JSAlgorithmVisualizer";
+			};
+			name = Debug;
+		};
+		47EC8B2A1D9E53E900670F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HEGJVBK4RD;
+				INFOPLIST_FILE = JSSAlgorithmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boraseoksoon.datastructure.JSSAlgorithmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSAlgorithmVisualizer.app/JSAlgorithmVisualizer";
+			};
+			name = Release;
+		};
+		47EC8B2C1D9E53E900670F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HEGJVBK4RD;
+				INFOPLIST_FILE = JSSAlgorithmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boraseoksoon.datastructure.JSSAlgorithmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JSSAlgorithm;
+			};
+			name = Debug;
+		};
+		47EC8B2D1D9E53E900670F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HEGJVBK4RD;
+				INFOPLIST_FILE = JSSAlgorithmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boraseoksoon.datastructure.JSSAlgorithmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JSSAlgorithm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47EC8AF31D9E53E900670F34 /* Build configuration list for PBXProject "JSAlgorithmVisualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EC8B231D9E53E900670F34 /* Debug */,
+				47EC8B241D9E53E900670F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47EC8B251D9E53E900670F34 /* Build configuration list for PBXNativeTarget "JSAlgorithmVisualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EC8B261D9E53E900670F34 /* Debug */,
+				47EC8B271D9E53E900670F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47EC8B281D9E53E900670F34 /* Build configuration list for PBXNativeTarget "JSAlgorithmVisualizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EC8B291D9E53E900670F34 /* Debug */,
+				47EC8B2A1D9E53E900670F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47EC8B2B1D9E53E900670F34 /* Build configuration list for PBXNativeTarget "JSAlgorithmVisualizerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EC8B2C1D9E53E900670F34 /* Debug */,
+				47EC8B2D1D9E53E900670F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47EC8AF01D9E53E900670F34 /* Project object */;
+}
