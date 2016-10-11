@@ -12,6 +12,8 @@
 		4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */; };
 		4758B7901DA15BF4008653D2 /* CircularLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78E1DA15BF4008653D2 /* CircularLinkedList.cpp */; };
 		4758B7961DA15C35008653D2 /* DoubleCircularLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4758B7951DA15C35008653D2 /* DoubleCircularLinkedList.m */; };
+		47CC89D61DACD86500BB3585 /* Fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CC89D41DACD86500BB3585 /* Fibonacci.cpp */; };
+		47CC89DA1DACDB4900BB3585 /* Factorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CC89D81DACDB4900BB3585 /* Factorial.cpp */; };
 		47EC8AFD1D9E53E900670F34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8AFC1D9E53E900670F34 /* main.m */; };
 		47EC8B001D9E53E900670F34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8AFF1D9E53E900670F34 /* AppDelegate.m */; };
 		47EC8B031D9E53E900670F34 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8B021D9E53E900670F34 /* ViewController.mm */; };
@@ -50,6 +52,10 @@
 		4758B78F1DA15BF4008653D2 /* CircularLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularLinkedList.hpp; sourceTree = "<group>"; };
 		4758B7941DA15C35008653D2 /* DoubleCircularLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleCircularLinkedList.h; sourceTree = "<group>"; };
 		4758B7951DA15C35008653D2 /* DoubleCircularLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleCircularLinkedList.m; sourceTree = "<group>"; };
+		47CC89D41DACD86500BB3585 /* Fibonacci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fibonacci.cpp; sourceTree = "<group>"; };
+		47CC89D51DACD86500BB3585 /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
+		47CC89D81DACDB4900BB3585 /* Factorial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Factorial.cpp; sourceTree = "<group>"; };
+		47CC89D91DACDB4900BB3585 /* Factorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factorial.h; sourceTree = "<group>"; };
 		47EC8AF81D9E53E900670F34 /* JSAlgorithmVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSAlgorithmVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EC8AFC1D9E53E900670F34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47EC8AFE1D9E53E900670F34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -190,6 +196,41 @@
 			name = Dequeue;
 			sourceTree = "<group>";
 		};
+		47CC89D21DACD83F00BB3585 /* Recursion */ = {
+			isa = PBXGroup;
+			children = (
+				47CC89DB1DACDB4B00BB3585 /* TowerOfHanoi */,
+				47CC89D71DACDB3E00BB3585 /* Factorial */,
+				47CC89D31DACD84A00BB3585 /* FibonacciSequence */,
+			);
+			name = Recursion;
+			sourceTree = "<group>";
+		};
+		47CC89D31DACD84A00BB3585 /* FibonacciSequence */ = {
+			isa = PBXGroup;
+			children = (
+				47CC89D41DACD86500BB3585 /* Fibonacci.cpp */,
+				47CC89D51DACD86500BB3585 /* Fibonacci.h */,
+			);
+			name = FibonacciSequence;
+			sourceTree = "<group>";
+		};
+		47CC89D71DACDB3E00BB3585 /* Factorial */ = {
+			isa = PBXGroup;
+			children = (
+				47CC89D81DACDB4900BB3585 /* Factorial.cpp */,
+				47CC89D91DACDB4900BB3585 /* Factorial.h */,
+			);
+			name = Factorial;
+			sourceTree = "<group>";
+		};
+		47CC89DB1DACDB4B00BB3585 /* TowerOfHanoi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TowerOfHanoi;
+			sourceTree = "<group>";
+		};
 		47EC8AEF1D9E53E900670F34 = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +330,7 @@
 		47EC8B321D9E540900670F34 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				47CC89D21DACD83F00BB3585 /* Recursion */,
 			);
 			name = Algorithm;
 			sourceTree = "<group>";
@@ -492,9 +534,11 @@
 				4758B7961DA15C35008653D2 /* DoubleCircularLinkedList.m in Sources */,
 				47EC8B031D9E53E900670F34 /* ViewController.mm in Sources */,
 				47EC8B001D9E53E900670F34 /* AppDelegate.m in Sources */,
+				47CC89D61DACD86500BB3585 /* Fibonacci.cpp in Sources */,
 				47EC8AFD1D9E53E900670F34 /* main.m in Sources */,
 				4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */,
 				47EC8B3C1D9E546700670F34 /* arrayList.c in Sources */,
+				47CC89DA1DACDB4900BB3585 /* Factorial.cpp in Sources */,
 				4758B7851DA15691008653D2 /* SingleLinkedList.cpp in Sources */,
 				4758B7901DA15BF4008653D2 /* CircularLinkedList.cpp in Sources */,
 			);
