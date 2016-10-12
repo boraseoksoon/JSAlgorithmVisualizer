@@ -29,7 +29,8 @@ class Fibonacci {
     private :
     
     public :
-    __int64_t fibo(__int64_t index);
+    __int64_t recursiveFibo(__int64_t index);
+    __int64_t fiboDP(__int64_t index);
 };
 
 

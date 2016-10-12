@@ -12,6 +12,7 @@
 #import "Fibonacci.h"
 #import "Factorial.h"
 #import "TowerOfHanoi.hpp"
+#include <time.h>
 
 @interface ViewController ()
 
@@ -93,21 +94,37 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     cout << list.popValue() << endl;
     
     __int32_t num;
-    num = 10;
+    num = 41;
     
     Fibonacci* fibonacci = new Fibonacci();
-
+    
+    NSLog(@"*********** DP fibonacci started ***********");
+    clock_t tStart2 = clock();
     for(__int32_t i = 0 ; i < num ; i++ ){
-        printf("%lld ", fibonacci->fibo(i));
+        printf("fiboDP : %lld\n", fibonacci->fiboDP(i));
     }
+    NSLog(@"*********** DP fibonacci finished ***********");
+    printf("Time taken: %.2fs\n", (double)(clock() - tStart2)/CLOCKS_PER_SEC);
     printf("\n\n");
+
+    //
+    NSLog(@"*********** recursive fibonacci started ***********");
+    clock_t tStart1 = clock();
+    for(__int32_t i = 0 ; i < num ; i++ ){
+        printf("recursiveFibo : %lld\n", fibonacci->recursiveFibo(i));
+    }
+    NSLog(@"*********** recursive fibonacci finished ***********");
+    printf("Time taken: %.2fs\n", (double)(clock() - tStart1)/CLOCKS_PER_SEC);
+    printf("\n\n");
+    //
+    
     
     Factorial* fact = new Factorial();
     NSLog(@"recursive version of factorial : %lld", fact->recursiveFactorial(5));
     NSLog(@"iterative version of factorial : %lld", fact->iterativeFactorial(5));
     
     
-    TowerOfHanoi* hanoi = new TowerOfHanoi(10);
+    TowerOfHanoi* hanoi = new TowerOfHanoi(3);
     // hanoi->setupNumberOfHanoiDisk();
     hanoi->moveDisk(hanoi->getNumberOfDisk(), 'A', 'B', 'C');
 }
