@@ -11,6 +11,7 @@
 #import "SingleLinkedList.h"
 #import "Fibonacci.h"
 #import "Factorial.h"
+#import "TowerOfHanoi.hpp"
 
 @interface ViewController ()
 
@@ -103,8 +104,12 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     
     Factorial* fact = new Factorial();
     NSLog(@"fact : %lld", fact->factorial(5));
+    
+    
+    TowerOfHanoi* hanoi = new TowerOfHanoi(64);
+    // hanoi->setupNumberOfHanoiDisk();
+    hanoi->moveDisk(hanoi->getNumberOfDisk(), 'A', 'B', 'C');
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

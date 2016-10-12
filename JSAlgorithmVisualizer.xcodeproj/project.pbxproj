@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4718F90E1DAE250300FE4196 /* TowerOfHanoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4718F90C1DAE250300FE4196 /* TowerOfHanoi.cpp */; };
 		4742F8071DA228DC0060A96A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4742F8061DA228DC0060A96A /* libc++.tbd */; };
 		4758B7851DA15691008653D2 /* SingleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B7831DA15691008653D2 /* SingleLinkedList.cpp */; };
 		4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4718F90C1DAE250300FE4196 /* TowerOfHanoi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TowerOfHanoi.cpp; sourceTree = "<group>"; };
+		4718F90D1DAE250300FE4196 /* TowerOfHanoi.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TowerOfHanoi.hpp; sourceTree = "<group>"; };
 		4742F8061DA228DC0060A96A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		4758B7831DA15691008653D2 /* SingleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingleLinkedList.cpp; sourceTree = "<group>"; };
 		4758B7841DA15691008653D2 /* SingleLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLinkedList.h; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 		47CC89DB1DACDB4B00BB3585 /* TowerOfHanoi */ = {
 			isa = PBXGroup;
 			children = (
+				4718F90C1DAE250300FE4196 /* TowerOfHanoi.cpp */,
+				4718F90D1DAE250300FE4196 /* TowerOfHanoi.hpp */,
 			);
 			name = TowerOfHanoi;
 			sourceTree = "<group>";
@@ -537,6 +542,7 @@
 				47CC89D61DACD86500BB3585 /* Fibonacci.cpp in Sources */,
 				47EC8AFD1D9E53E900670F34 /* main.m in Sources */,
 				4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */,
+				4718F90E1DAE250300FE4196 /* TowerOfHanoi.cpp in Sources */,
 				47EC8B3C1D9E546700670F34 /* arrayList.c in Sources */,
 				47CC89DA1DACDB4900BB3585 /* Factorial.cpp in Sources */,
 				4758B7851DA15691008653D2 /* SingleLinkedList.cpp in Sources */,
