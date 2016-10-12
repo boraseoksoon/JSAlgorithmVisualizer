@@ -18,5 +18,6 @@ using namespace std;
 
 class Factorial {
     public :
-        __int64_t factorial(__int64_t number);
+    __int64_t recursiveFactorial(__int64_t number);
+    __int64_t iterativeFactorial(__int64_t number);
 };

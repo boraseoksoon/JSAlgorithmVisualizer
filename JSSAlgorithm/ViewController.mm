@@ -103,10 +103,11 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     printf("\n\n");
     
     Factorial* fact = new Factorial();
-    NSLog(@"fact : %lld", fact->factorial(5));
+    NSLog(@"recursive version of factorial : %lld", fact->recursiveFactorial(5));
+    NSLog(@"iterative version of factorial : %lld", fact->iterativeFactorial(5));
     
     
-    TowerOfHanoi* hanoi = new TowerOfHanoi(64);
+    TowerOfHanoi* hanoi = new TowerOfHanoi(10);
     // hanoi->setupNumberOfHanoiDisk();
     hanoi->moveDisk(hanoi->getNumberOfDisk(), 'A', 'B', 'C');
 }
@@ -115,6 +116,5 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
