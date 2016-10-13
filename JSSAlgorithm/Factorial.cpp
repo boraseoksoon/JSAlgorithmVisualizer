@@ -24,20 +24,4 @@ __int64_t Factorial::iterativeFactorial(__int64_t number) {
         total = total * i;
     }
     return total;
-
-    // test
-    /*
-    for (__int64_t i = 1; i <= number; i++) {
-        printf("i++ : %lld\n", i);
-    }
-    
-    for (__int64_t i = 1; i <= number; ++i) {
-        printf("++i : %lld\n", i);
-    }
-    
-    int test = 0;
-    printf("test++ : %d\n", test++);
-    test = 0;
-    printf("++test : %d\n", ++test);
-    */
 }

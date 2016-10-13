@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 #import "arrayList.h"
-#import "SingleLinkedList.h"
 #import "Fibonacci.h"
 #import "Factorial.h"
 #import "TowerOfHanoi.hpp"
 #include <time.h>
+#import "LinkedList.h"
 
 @interface ViewController ()
 
@@ -83,18 +83,79 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    SingleLinkedList list;
     
-    list.addValue(5);
-    list.addValue(10);
-    list.addValue(20);
+    int i = 0;
+    int arrayCount = 0;
+    ArrayList* pList = NULL;
+    ArrayListNode* pValue = NULL;
     
-    cout << list.popValue() << endl;
-    cout << list.popValue() << endl;
-    cout << list.popValue() << endl;
+    pList = createArrayList(6);
+    
+    if (pList != NULL){
+        ArrayListNode node;
+        
+        // List initialization : 1,3,5 add.
+        node.data = 1;
+        addALElement(pList, 0, node);
+        
+        node.data = 3;
+        addALElement(pList, 1, node);
+        
+        node.data = 5;
+        addALElement(pList, 2, node);
+        
+        displayArrayList(pList);
+        
+        // remove the first element
+        removeALElement(pList, 0);
+        displayArrayList(pList);
+        
+        arrayCount = getArrayListLength(pList);
+        
+        for (i=0; i<arrayCount; i++){
+            pValue = getALElement(pList, i);
+            printf("position[%d] - %d\n", i, pValue->data);
+        }
+        
+        deleteArrayList(pList);
+    }
+    
+    // Simple Linked List
+    i = 1;
+    initList();
+    
+    node* now;
+    node temp;
+    
+    for(i=1;i<101;i++)
+    {
+        temp.value = i;
+        addNode(&temp);
+    }
+    
+    for(i=99; i>0; i-=9)
+    {
+        temp.value = 999;
+        insertAfter(nodeAtIndex(i), &temp);
+        insertBefore(nodeAtIndex(i), &temp);
+    }
+    
+    for(i=99;i>0;i-=13)
+    {
+        removeNode(nodeAtIndex(i));
+    }
+    
+    dumpList();
+    printf("\n\n count of nodes : %d", countOfNodes());
+    printf("\n value of node at 33 : %d", nodeAtIndex(33)->value);
+    printf("\n index of node whose value is 99 : %d", indexOfValue(99));
+    
+    //
+
+    
     
     __int32_t num;
-    num = 41;
+    num = 50;
     
     Fibonacci* fibonacci = new Fibonacci();
     
@@ -123,9 +184,7 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     NSLog(@"recursive version of factorial : %lld", fact->recursiveFactorial(5));
     NSLog(@"iterative version of factorial : %lld", fact->iterativeFactorial(5));
     
-    
-    TowerOfHanoi* hanoi = new TowerOfHanoi(3);
-    // hanoi->setupNumberOfHanoiDisk();
+    TowerOfHanoi* hanoi = new TowerOfHanoi(5);
     hanoi->moveDisk(hanoi->getNumberOfDisk(), 'A', 'B', 'C');
 }
 

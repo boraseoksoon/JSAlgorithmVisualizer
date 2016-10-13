@@ -9,6 +9,11 @@
 #ifndef __ARRAYLIST__
 #define __ARRAYLIST__
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 typedef struct ArrayListNodeType {
     int data;
 } ArrayListNode;
@@ -28,6 +33,10 @@ ArrayListNode* getALElement(ArrayList* pList, int position);
 void displayArrayList(ArrayList* pList);
 void clearArrayList(ArrayList* pList);
 int getArrayListLength(ArrayList* pList);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 

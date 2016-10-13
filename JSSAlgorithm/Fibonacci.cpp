@@ -37,11 +37,5 @@ __int64_t Fibonacci::fiboDP(__int64_t index) {
         return memoization[index] = 1;
     }
     
-    /*
-    if (index == 0 || index == 1) {
-        return memoization[index] = 1;
-    }
-    */
-    
     return memoization[index] = fiboDP(index - 1) + fiboDP(index - 2);
 }
