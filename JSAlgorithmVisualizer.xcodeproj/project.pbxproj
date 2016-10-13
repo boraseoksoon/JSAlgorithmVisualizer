@@ -12,7 +12,7 @@
 		4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */; };
 		4758B7901DA15BF4008653D2 /* CircularLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78E1DA15BF4008653D2 /* CircularLinkedList.cpp */; };
 		4758B7961DA15C35008653D2 /* DoubleCircularLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4758B7951DA15C35008653D2 /* DoubleCircularLinkedList.m */; };
-		4769EA0B1DAF538D00CB4413 /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769EA091DAF538D00CB4413 /* LinkedList.c */; };
+		4769EA0B1DAF538D00CB4413 /* linkedlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769EA091DAF538D00CB4413 /* linkedlist.c */; };
 		47CC89D61DACD86500BB3585 /* Fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CC89D41DACD86500BB3585 /* Fibonacci.cpp */; };
 		47CC89DA1DACDB4900BB3585 /* Factorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CC89D81DACDB4900BB3585 /* Factorial.cpp */; };
 		47EC8AFD1D9E53E900670F34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8AFC1D9E53E900670F34 /* main.m */; };
@@ -23,7 +23,7 @@
 		47EC8B0B1D9E53E900670F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EC8B091D9E53E900670F34 /* LaunchScreen.storyboard */; };
 		47EC8B161D9E53E900670F34 /* JSSAlgorithmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8B151D9E53E900670F34 /* JSSAlgorithmTests.m */; };
 		47EC8B211D9E53E900670F34 /* JSSAlgorithmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8B201D9E53E900670F34 /* JSSAlgorithmUITests.m */; };
-		47EC8B3C1D9E546700670F34 /* arrayList.c in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8B3A1D9E546700670F34 /* arrayList.c */; };
+		47EC8B3C1D9E546700670F34 /* arraylist.c in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8B3A1D9E546700670F34 /* arraylist.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +48,13 @@
 		4718F90D1DAE250300FE4196 /* TowerOfHanoi.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TowerOfHanoi.hpp; sourceTree = "<group>"; };
 		4742F8061DA228DC0060A96A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleLinkedList.cpp; sourceTree = "<group>"; };
-		4758B78C1DA15BEC008653D2 /* DoubleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DoubleLinkedList.hpp; sourceTree = "<group>"; };
+		4758B78C1DA15BEC008653D2 /* DoubleLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleLinkedList.h; sourceTree = "<group>"; };
 		4758B78E1DA15BF4008653D2 /* CircularLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularLinkedList.cpp; sourceTree = "<group>"; };
 		4758B78F1DA15BF4008653D2 /* CircularLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularLinkedList.hpp; sourceTree = "<group>"; };
 		4758B7941DA15C35008653D2 /* DoubleCircularLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleCircularLinkedList.h; sourceTree = "<group>"; };
 		4758B7951DA15C35008653D2 /* DoubleCircularLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleCircularLinkedList.m; sourceTree = "<group>"; };
-		4769EA091DAF538D00CB4413 /* LinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkedList.c; sourceTree = "<group>"; };
-		4769EA0A1DAF538D00CB4413 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		4769EA091DAF538D00CB4413 /* linkedlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linkedlist.c; sourceTree = "<group>"; };
+		4769EA0A1DAF538D00CB4413 /* linkedlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linkedlist.h; sourceTree = "<group>"; };
 		47CC89D41DACD86500BB3585 /* Fibonacci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fibonacci.cpp; sourceTree = "<group>"; };
 		47CC89D51DACD86500BB3585 /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
 		47CC89D81DACDB4900BB3585 /* Factorial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Factorial.cpp; sourceTree = "<group>"; };
@@ -75,8 +75,8 @@
 		47EC8B1C1D9E53E900670F34 /* JSAlgorithmVisualizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSAlgorithmVisualizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EC8B201D9E53E900670F34 /* JSSAlgorithmUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSSAlgorithmUITests.m; sourceTree = "<group>"; };
 		47EC8B221D9E53E900670F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47EC8B3A1D9E546700670F34 /* arrayList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arrayList.c; sourceTree = "<group>"; };
-		47EC8B3B1D9E546700670F34 /* arrayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayList.h; sourceTree = "<group>"; };
+		47EC8B3A1D9E546700670F34 /* arraylist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arraylist.c; sourceTree = "<group>"; };
+		47EC8B3B1D9E546700670F34 /* arraylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arraylist.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +127,8 @@
 		4758B7871DA1569F008653D2 /* SingleLinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				4769EA091DAF538D00CB4413 /* LinkedList.c */,
-				4769EA0A1DAF538D00CB4413 /* LinkedList.h */,
+				4769EA091DAF538D00CB4413 /* linkedlist.c */,
+				4769EA0A1DAF538D00CB4413 /* linkedlist.h */,
 			);
 			name = SingleLinkedList;
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */,
-				4758B78C1DA15BEC008653D2 /* DoubleLinkedList.hpp */,
+				4758B78C1DA15BEC008653D2 /* DoubleLinkedList.h */,
 			);
 			name = DoubleLinkedList;
 			sourceTree = "<group>";
@@ -402,8 +402,8 @@
 		47EC8B391D9E545A00670F34 /* ArrayList */ = {
 			isa = PBXGroup;
 			children = (
-				47EC8B3A1D9E546700670F34 /* arrayList.c */,
-				47EC8B3B1D9E546700670F34 /* arrayList.h */,
+				47EC8B3A1D9E546700670F34 /* arraylist.c */,
+				47EC8B3B1D9E546700670F34 /* arraylist.h */,
 			);
 			name = ArrayList;
 			sourceTree = "<group>";
@@ -548,11 +548,11 @@
 				47EC8B031D9E53E900670F34 /* ViewController.mm in Sources */,
 				47EC8B001D9E53E900670F34 /* AppDelegate.m in Sources */,
 				47CC89D61DACD86500BB3585 /* Fibonacci.cpp in Sources */,
-				4769EA0B1DAF538D00CB4413 /* LinkedList.c in Sources */,
+				4769EA0B1DAF538D00CB4413 /* linkedlist.c in Sources */,
 				47EC8AFD1D9E53E900670F34 /* main.m in Sources */,
 				4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */,
 				4718F90E1DAE250300FE4196 /* TowerOfHanoi.cpp in Sources */,
-				47EC8B3C1D9E546700670F34 /* arrayList.c in Sources */,
+				47EC8B3C1D9E546700670F34 /* arraylist.c in Sources */,
 				47CC89DA1DACDB4900BB3585 /* Factorial.cpp in Sources */,
 				4758B7901DA15BF4008653D2 /* CircularLinkedList.cpp in Sources */,
 			);

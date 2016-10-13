@@ -13,8 +13,6 @@
 #include <iostream>
 
 using namespace std;
-#endif /* TowerOfHanoi_hpp */
-
 
 class TowerOfHanoi {
     private:
@@ -30,8 +28,4 @@ class TowerOfHanoi {
     void setNumberOfDisk(__int64_t _numberOfDisk);
 };
 
-
-
-
-
-
+#endif /* TowerOfHanoi_hpp */

@@ -23,8 +23,6 @@
 #include <iostream>
 using namespace std;
 
-#endif /* Fibonacci_h */
-
 class Fibonacci {
     private :
     
@@ -33,5 +31,4 @@ class Fibonacci {
     __int64_t fiboDP(__int64_t index);
 };
 
-
-
+#endif /* Fibonacci_h */

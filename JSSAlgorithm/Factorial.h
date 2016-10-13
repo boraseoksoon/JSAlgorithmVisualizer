@@ -14,10 +14,10 @@
 
 using namespace std;
 
-#endif /* Factorial_h */
-
 class Factorial {
     public :
     __int64_t recursiveFactorial(__int64_t number);
     __int64_t iterativeFactorial(__int64_t number);
 };
+
+#endif /* Factorial_h */

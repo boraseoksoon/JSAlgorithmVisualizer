@@ -7,18 +7,44 @@
 //
 
 #import "ViewController.h"
-#import "arrayList.h"
+#import "arraylist.h"
+#import "linkedlist.h"
+#import "DoubleLinkedList.h"
 #import "Fibonacci.h"
 #import "Factorial.h"
 #import "TowerOfHanoi.hpp"
 #include <time.h>
-#import "LinkedList.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+void DrawFromHead(DoubleLinkedList<int64_t> *pList)
+{
+    DoubleLinkedList<int64_t>::ListData *list = pList->GetHead();
+    while(list && list != pList->GetTail() )
+    {
+        printf("[%d]->", list->nData);
+        list = list->pRight;
+    }
+    printf("[Tail]\n");
+}
+
+void DrawFromTail(DoubleLinkedList<int64_t> *pList)
+{
+    DoubleLinkedList<int64_t>::ListData *list = pList->GetTail()->pLeft;
+    if( list )
+        printf("[Tail]->");
+    while(list && list != pList->GetHead() )
+    {
+        printf("[%d]->", list->nData);
+        list = list->pLeft;
+    }
+    if( list )
+        printf("[%d]\n", list->nData);
+}
 
 const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
 
@@ -84,7 +110,73 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    int i = 0;
+    // Double Linked List
+    srand(time(0));
+    DoubleLinkedList<int64_t>* list = new DoubleLinkedList<int64_t>();
+    for(int i=0; i<10; ++i)
+    {
+        int random = rand()%100;
+        list->PushTail(random);
+        DrawFromHead(list);
+        if( i == 5 )
+        {
+            list->PopHead();
+            DrawFromHead(list);
+        }
+    }
+    list->Clear();
+    DrawFromHead(list);
+    for(int i=0; i<10; ++i)
+    {
+        int random = rand()%100;
+        list->PushHead(random);
+        DrawFromTail(list);
+        if( i == 5 )
+        {
+            list->PopTail();
+            DrawFromTail(list);
+        }
+    }
+    list->Clear();
+    DrawFromTail(list);
+    
+    // Simple Linked List
+    int i = 1;
+    initList();
+    
+    node* now;
+    node temp;
+    
+    for(i=1;i<101;i++)
+    {
+        temp.value = i;
+        addNode(&temp);
+    }
+    
+    for(i=99; i>0; i-=9)
+    {
+        temp.value = 999;
+        insertAfter(nodeAtIndex(i), &temp);
+        insertBefore(nodeAtIndex(i), &temp);
+    }
+    
+    for(i=99;i>0;i-=13)
+    {
+        removeNode(nodeAtIndex(i));
+    }
+    
+    dumpList();
+    printf("\n\n count of nodes : %d", countOfNodes());
+    printf("\n value of node at 33 : %d", nodeAtIndex(33)->value);
+    printf("\n index of node whose value is 99 : %d", indexOfValue(99));
+    
+    //
+
+    
+
+    
+    // ArrayList
+    i = 0;
     int arrayCount = 0;
     ArrayList* pList = NULL;
     ArrayListNode* pValue = NULL;
@@ -119,40 +211,6 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
         
         deleteArrayList(pList);
     }
-    
-    // Simple Linked List
-    i = 1;
-    initList();
-    
-    node* now;
-    node temp;
-    
-    for(i=1;i<101;i++)
-    {
-        temp.value = i;
-        addNode(&temp);
-    }
-    
-    for(i=99; i>0; i-=9)
-    {
-        temp.value = 999;
-        insertAfter(nodeAtIndex(i), &temp);
-        insertBefore(nodeAtIndex(i), &temp);
-    }
-    
-    for(i=99;i>0;i-=13)
-    {
-        removeNode(nodeAtIndex(i));
-    }
-    
-    dumpList();
-    printf("\n\n count of nodes : %d", countOfNodes());
-    printf("\n value of node at 33 : %d", nodeAtIndex(33)->value);
-    printf("\n index of node whose value is 99 : %d", indexOfValue(99));
-    
-    //
-
-    
     
     __int32_t num;
     num = 50;
