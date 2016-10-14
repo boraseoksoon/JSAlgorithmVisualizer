@@ -15,6 +15,8 @@
 #import "TowerOfHanoi.hpp"
 #import "StackByLinkedList.hpp"
 #import "stack_by_array.h"
+#import "linked_queue.h"
+#import "queue_by_array.h"
 
 #include <time.h>
 #include <queue>
@@ -270,6 +272,7 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     
     
     // Stack By LinkedList
+    NSLog(@"******* Linked-Stack begins *******");
     stackL<int64_t> s;
     s.push(2);
     s.push(23);
@@ -290,8 +293,10 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     s.pop();
     s.pop();
     
+    NSLog(@"******* Linked-Stack finished *******");
+    
     // Stack By Simple Array
-        
+    NSLog(@"******* Stack By Array begins *******");
     init_stack();
     
     printf ("\nPush 5, 4, 7, 8, 2, 1");
@@ -328,6 +333,61 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     i = pop();
     print_stack();
     printf("\n  popped value is %lld\n", i);
+    NSLog(@"******* Stack By Array finished *******");
+    
+    // Linked queue
+    NSLog(@"******* linked queue begins *******");
+    init_linked_queue();
+    
+    put_linked_queue(1);
+    put_linked_queue(2);
+    put_linked_queue(3);
+    print_linked_queue();
+    get_linked_queue();
+    get_linked_queue();
+    print_linked_queue();
+    get_linked_queue();
+    get_linked_queue();
+    NSLog(@"******* linked queue finished *******");
+    
+    NSLog(@"******* queue by simple array begins *******");
+    // queue by simple array
+    init_queue();
+    
+    printf("\nPut 5, 4, 7, 8, 2, 1");
+    put(5);
+    put(4);
+    put(7);
+    put(8);
+    put(2);
+    put(1);
+    print_queue();
+    
+    printf("\nGet");
+    i = get();
+    print_queue();
+    printf("\n  getting value is %lld ", i);
+    
+    printf("\nPut 3, 2, 5, 7");
+    put(3);
+    put(2);
+    put(5);
+    put(7);
+    print_queue();
+
+    printf("\nNow queue is full, put 3");
+    put(3);        // Overflow error, queue range exeeded.
+    print_queue();
+    
+    printf("\nInitialize queue");
+    clear_queue();
+    print_queue();
+    
+    printf("\nNow queue is empty, get");
+    i = get();
+    print_queue();
+    printf("\n getting value is %lld", i);
+    NSLog(@"******* queue by simple array finished *******");
 }
 
 - (void)didReceiveMemoryWarning {

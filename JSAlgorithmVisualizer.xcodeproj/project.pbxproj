@@ -14,6 +14,8 @@
 		4769E1D41DB0D2AE0014C1F9 /* CircularDoublyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4769E1D21DB0D2AE0014C1F9 /* CircularDoublyLinkedList.cpp */; };
 		4769E1D91DB0D7290014C1F9 /* StackByLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4769E1D71DB0D7290014C1F9 /* StackByLinkedList.cpp */; };
 		4769E1DC1DB0DBAE0014C1F9 /* stack_by_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769E1DA1DB0DBAE0014C1F9 /* stack_by_array.c */; };
+		4769E1E61DB0E8390014C1F9 /* linked_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769E1E41DB0E8390014C1F9 /* linked_queue.c */; };
+		4769E1E91DB0EA280014C1F9 /* queue_by_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769E1E71DB0EA280014C1F9 /* queue_by_array.c */; };
 		4769EA0B1DAF538D00CB4413 /* linkedlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769EA091DAF538D00CB4413 /* linkedlist.c */; };
 		47CC89D61DACD86500BB3585 /* Fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CC89D41DACD86500BB3585 /* Fibonacci.cpp */; };
 		47CC89DA1DACDB4900BB3585 /* Factorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CC89D81DACDB4900BB3585 /* Factorial.cpp */; };
@@ -59,6 +61,10 @@
 		4769E1D81DB0D7290014C1F9 /* StackByLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StackByLinkedList.hpp; sourceTree = "<group>"; };
 		4769E1DA1DB0DBAE0014C1F9 /* stack_by_array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack_by_array.c; sourceTree = "<group>"; };
 		4769E1DB1DB0DBAE0014C1F9 /* stack_by_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack_by_array.h; sourceTree = "<group>"; };
+		4769E1E41DB0E8390014C1F9 /* linked_queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linked_queue.c; sourceTree = "<group>"; };
+		4769E1E51DB0E8390014C1F9 /* linked_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linked_queue.h; sourceTree = "<group>"; };
+		4769E1E71DB0EA280014C1F9 /* queue_by_array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = queue_by_array.c; sourceTree = "<group>"; };
+		4769E1E81DB0EA280014C1F9 /* queue_by_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue_by_array.h; sourceTree = "<group>"; };
 		4769EA091DAF538D00CB4413 /* linkedlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linkedlist.c; sourceTree = "<group>"; };
 		4769EA0A1DAF538D00CB4413 /* linkedlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linkedlist.h; sourceTree = "<group>"; };
 		47CC89D41DACD86500BB3585 /* Fibonacci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fibonacci.cpp; sourceTree = "<group>"; };
@@ -196,6 +202,8 @@
 		4758B79A1DA16100008653D2 /* Queue */ = {
 			isa = PBXGroup;
 			children = (
+				4769E1DE1DB0E3840014C1F9 /* QueueByArray */,
+				4769E1DD1DB0E3630014C1F9 /* LinkedQueue */,
 			);
 			name = Queue;
 			sourceTree = "<group>";
@@ -223,6 +231,54 @@
 				4769E1D81DB0D7290014C1F9 /* StackByLinkedList.hpp */,
 			);
 			name = StackByLinkedList;
+			sourceTree = "<group>";
+		};
+		4769E1DD1DB0E3630014C1F9 /* LinkedQueue */ = {
+			isa = PBXGroup;
+			children = (
+				4769E1E41DB0E8390014C1F9 /* linked_queue.c */,
+				4769E1E51DB0E8390014C1F9 /* linked_queue.h */,
+			);
+			name = LinkedQueue;
+			sourceTree = "<group>";
+		};
+		4769E1DE1DB0E3840014C1F9 /* QueueByArray */ = {
+			isa = PBXGroup;
+			children = (
+				4769E1E71DB0EA280014C1F9 /* queue_by_array.c */,
+				4769E1E81DB0EA280014C1F9 /* queue_by_array.h */,
+			);
+			name = QueueByArray;
+			sourceTree = "<group>";
+		};
+		4769E1E01DB0E39C0014C1F9 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				4769E1E31DB0E3B60014C1F9 /* BTree */,
+				4769E1E21DB0E3B10014C1F9 /* BinaryTree */,
+			);
+			name = Tree;
+			sourceTree = "<group>";
+		};
+		4769E1E11DB0E3AD0014C1F9 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
+		4769E1E21DB0E3B10014C1F9 /* BinaryTree */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BinaryTree;
+			sourceTree = "<group>";
+		};
+		4769E1E31DB0E3B60014C1F9 /* BTree */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BTree;
 			sourceTree = "<group>";
 		};
 		4769EA081DAF51EE00CB4413 /* Backtracking */ = {
@@ -351,6 +407,8 @@
 		47EC8B301D9E53FD00670F34 /* NonLinear */ = {
 			isa = PBXGroup;
 			children = (
+				4769E1E11DB0E3AD0014C1F9 /* Graph */,
+				4769E1E01DB0E39C0014C1F9 /* Tree */,
 			);
 			name = NonLinear;
 			sourceTree = "<group>";
@@ -574,6 +632,8 @@
 				47EC8B001D9E53E900670F34 /* AppDelegate.m in Sources */,
 				4769E1DC1DB0DBAE0014C1F9 /* stack_by_array.c in Sources */,
 				47CC89D61DACD86500BB3585 /* Fibonacci.cpp in Sources */,
+				4769E1E61DB0E8390014C1F9 /* linked_queue.c in Sources */,
+				4769E1E91DB0EA280014C1F9 /* queue_by_array.c in Sources */,
 				4769EA0B1DAF538D00CB4413 /* linkedlist.c in Sources */,
 				47EC8AFD1D9E53E900670F34 /* main.m in Sources */,
 				4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */,
