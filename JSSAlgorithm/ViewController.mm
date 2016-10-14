@@ -13,7 +13,14 @@
 #import "Fibonacci.h"
 #import "Factorial.h"
 #import "TowerOfHanoi.hpp"
+#import "StackByLinkedList.hpp"
+#import "stack_by_array.h"
+
 #include <time.h>
+#include <queue>
+
+
+using namespace std;
 
 @interface ViewController ()
 
@@ -110,12 +117,28 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     // Do any additional setup after loading the view, typically from a nib.
     
     
+    // C++ STL Queue test in Objective-C++.
+    queue<char> Queue;
+    
+    Queue.push('A');
+    Queue.push('B');
+    Queue.push('C');
+    
+    cout << "Queue Size : " << Queue.size() << endl;
+    cout << "Queue Items" << endl;
+    
+    while( ! Queue.empty() )
+    {
+        cout << Queue.front() << endl;
+        Queue.pop(); 
+    }
+    
     // Double Linked List
     srand(time(0));
     DoubleLinkedList<int64_t>* list = new DoubleLinkedList<int64_t>();
-    for(int i=0; i<10; ++i)
+    for(int64_t i=0; i<10; ++i)
     {
-        int random = rand()%100;
+        int64_t random = rand()%100;
         list->PushTail(random);
         DrawFromHead(list);
         if( i == 5 )
@@ -126,9 +149,9 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     }
     list->Clear();
     DrawFromHead(list);
-    for(int i=0; i<10; ++i)
+    for(int64_t i=0; i<10; ++i)
     {
-        int random = rand()%100;
+        int64_t random = rand()%100;
         list->PushHead(random);
         DrawFromTail(list);
         if( i == 5 )
@@ -141,7 +164,7 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     DrawFromTail(list);
     
     // Simple Linked List
-    int i = 1;
+    int64_t i = 1;
     initList();
     
     node* now;
@@ -177,7 +200,7 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     
     // ArrayList
     i = 0;
-    int arrayCount = 0;
+    int64_t arrayCount = 0;
     ArrayList* pList = NULL;
     ArrayListNode* pValue = NULL;
     
@@ -213,7 +236,7 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     }
     
     __int32_t num;
-    num = 50;
+    num = 2;
     
     Fibonacci* fibonacci = new Fibonacci();
     
@@ -244,6 +267,67 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
     
     TowerOfHanoi* hanoi = new TowerOfHanoi(5);
     hanoi->moveDisk(hanoi->getNumberOfDisk(), 'A', 'B', 'C');
+    
+    
+    // Stack By LinkedList
+    stackL<int64_t> s;
+    s.push(2);
+    s.push(23);
+    s.push(24);
+    s.push(25);
+    s.push(26);
+    cout << s.getTop() << endl;
+    
+    s.printStack();
+    
+    s.pop();
+    s.pop();
+    s.pop();
+    
+    s.printStack();
+    
+    s.pop();
+    s.pop();
+    s.pop();
+    
+    // Stack By Simple Array
+        
+    init_stack();
+    
+    printf ("\nPush 5, 4, 7, 8, 2, 1");
+    push(5);
+    push(4);
+    push(7);
+    push(8);
+    push(2);
+    push(1);
+    print_stack();
+    
+    printf("\nPop");
+    i = pop();
+    print_stack();
+    printf("\n  popped value is %lld\n", i);
+    
+    printf("\nPush 3, 2, 5, 7, 2");
+    push(3);
+    push(2);
+    push(5);
+    push(7);
+    push(2);
+    print_stack();
+    
+    printf("\nNow Stack is full, push 3");
+    push(3);
+    print_stack();
+    
+    printf("\nInitialize stack");
+    init_stack();
+    print_stack();
+    
+    printf("\nNow Stack is empty, pop");
+    i = pop();
+    print_stack();
+    printf("\n  popped value is %lld\n", i);
 }
 
 - (void)didReceiveMemoryWarning {

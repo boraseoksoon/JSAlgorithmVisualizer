@@ -11,7 +11,9 @@
 		4742F8071DA228DC0060A96A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4742F8061DA228DC0060A96A /* libc++.tbd */; };
 		4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */; };
 		4758B7901DA15BF4008653D2 /* CircularLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78E1DA15BF4008653D2 /* CircularLinkedList.cpp */; };
-		4758B7961DA15C35008653D2 /* DoubleCircularLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4758B7951DA15C35008653D2 /* DoubleCircularLinkedList.m */; };
+		4769E1D41DB0D2AE0014C1F9 /* CircularDoublyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4769E1D21DB0D2AE0014C1F9 /* CircularDoublyLinkedList.cpp */; };
+		4769E1D91DB0D7290014C1F9 /* StackByLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4769E1D71DB0D7290014C1F9 /* StackByLinkedList.cpp */; };
+		4769E1DC1DB0DBAE0014C1F9 /* stack_by_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769E1DA1DB0DBAE0014C1F9 /* stack_by_array.c */; };
 		4769EA0B1DAF538D00CB4413 /* linkedlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769EA091DAF538D00CB4413 /* linkedlist.c */; };
 		47CC89D61DACD86500BB3585 /* Fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CC89D41DACD86500BB3585 /* Fibonacci.cpp */; };
 		47CC89DA1DACDB4900BB3585 /* Factorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CC89D81DACDB4900BB3585 /* Factorial.cpp */; };
@@ -51,8 +53,12 @@
 		4758B78C1DA15BEC008653D2 /* DoubleLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleLinkedList.h; sourceTree = "<group>"; };
 		4758B78E1DA15BF4008653D2 /* CircularLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularLinkedList.cpp; sourceTree = "<group>"; };
 		4758B78F1DA15BF4008653D2 /* CircularLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularLinkedList.hpp; sourceTree = "<group>"; };
-		4758B7941DA15C35008653D2 /* DoubleCircularLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleCircularLinkedList.h; sourceTree = "<group>"; };
-		4758B7951DA15C35008653D2 /* DoubleCircularLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleCircularLinkedList.m; sourceTree = "<group>"; };
+		4769E1D21DB0D2AE0014C1F9 /* CircularDoublyLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularDoublyLinkedList.cpp; sourceTree = "<group>"; };
+		4769E1D31DB0D2AE0014C1F9 /* CircularDoublyLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularDoublyLinkedList.hpp; sourceTree = "<group>"; };
+		4769E1D71DB0D7290014C1F9 /* StackByLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StackByLinkedList.cpp; sourceTree = "<group>"; };
+		4769E1D81DB0D7290014C1F9 /* StackByLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StackByLinkedList.hpp; sourceTree = "<group>"; };
+		4769E1DA1DB0DBAE0014C1F9 /* stack_by_array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack_by_array.c; sourceTree = "<group>"; };
+		4769E1DB1DB0DBAE0014C1F9 /* stack_by_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack_by_array.h; sourceTree = "<group>"; };
 		4769EA091DAF538D00CB4413 /* linkedlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linkedlist.c; sourceTree = "<group>"; };
 		4769EA0A1DAF538D00CB4413 /* linkedlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linkedlist.h; sourceTree = "<group>"; };
 		47CC89D41DACD86500BB3585 /* Fibonacci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fibonacci.cpp; sourceTree = "<group>"; };
@@ -116,7 +122,7 @@
 		4758B7861DA15695008653D2 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				4758B7931DA15C24008653D2 /* DoubleCircularLinkedList */,
+				4758B7931DA15C24008653D2 /* CircularDoublyLinkedList */,
 				4758B7891DA156B1008653D2 /* CircularLinkedList */,
 				4758B7881DA156AA008653D2 /* DoubleLinkedList */,
 				4758B7871DA1569F008653D2 /* SingleLinkedList */,
@@ -151,13 +157,13 @@
 			name = CircularLinkedList;
 			sourceTree = "<group>";
 		};
-		4758B7931DA15C24008653D2 /* DoubleCircularLinkedList */ = {
+		4758B7931DA15C24008653D2 /* CircularDoublyLinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				4758B7941DA15C35008653D2 /* DoubleCircularLinkedList.h */,
-				4758B7951DA15C35008653D2 /* DoubleCircularLinkedList.m */,
+				4769E1D21DB0D2AE0014C1F9 /* CircularDoublyLinkedList.cpp */,
+				4769E1D31DB0D2AE0014C1F9 /* CircularDoublyLinkedList.hpp */,
 			);
-			name = DoubleCircularLinkedList;
+			name = CircularDoublyLinkedList;
 			sourceTree = "<group>";
 		};
 		4758B7971DA160D9008653D2 /* List */ = {
@@ -172,6 +178,8 @@
 		4758B7981DA160F1008653D2 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
+				4769E1D61DB0D6D70014C1F9 /* StackByLinkedList */,
+				4769E1D51DB0D6CD0014C1F9 /* StackByArray */,
 			);
 			name = Stack;
 			sourceTree = "<group>";
@@ -179,7 +187,7 @@
 		4758B7991DA160F7008653D2 /* Queue */ = {
 			isa = PBXGroup;
 			children = (
-				4758B79B1DA16104008653D2 /* Dequeue */,
+				4758B79B1DA16104008653D2 /* Deque */,
 				4758B79A1DA16100008653D2 /* Queue */,
 			);
 			name = Queue;
@@ -192,11 +200,29 @@
 			name = Queue;
 			sourceTree = "<group>";
 		};
-		4758B79B1DA16104008653D2 /* Dequeue */ = {
+		4758B79B1DA16104008653D2 /* Deque */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Dequeue;
+			name = Deque;
+			sourceTree = "<group>";
+		};
+		4769E1D51DB0D6CD0014C1F9 /* StackByArray */ = {
+			isa = PBXGroup;
+			children = (
+				4769E1DA1DB0DBAE0014C1F9 /* stack_by_array.c */,
+				4769E1DB1DB0DBAE0014C1F9 /* stack_by_array.h */,
+			);
+			name = StackByArray;
+			sourceTree = "<group>";
+		};
+		4769E1D61DB0D6D70014C1F9 /* StackByLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				4769E1D71DB0D7290014C1F9 /* StackByLinkedList.cpp */,
+				4769E1D81DB0D7290014C1F9 /* StackByLinkedList.hpp */,
+			);
+			name = StackByLinkedList;
 			sourceTree = "<group>";
 		};
 		4769EA081DAF51EE00CB4413 /* Backtracking */ = {
@@ -544,9 +570,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4758B7961DA15C35008653D2 /* DoubleCircularLinkedList.m in Sources */,
 				47EC8B031D9E53E900670F34 /* ViewController.mm in Sources */,
 				47EC8B001D9E53E900670F34 /* AppDelegate.m in Sources */,
+				4769E1DC1DB0DBAE0014C1F9 /* stack_by_array.c in Sources */,
 				47CC89D61DACD86500BB3585 /* Fibonacci.cpp in Sources */,
 				4769EA0B1DAF538D00CB4413 /* linkedlist.c in Sources */,
 				47EC8AFD1D9E53E900670F34 /* main.m in Sources */,
@@ -555,6 +581,8 @@
 				47EC8B3C1D9E546700670F34 /* arraylist.c in Sources */,
 				47CC89DA1DACDB4900BB3585 /* Factorial.cpp in Sources */,
 				4758B7901DA15BF4008653D2 /* CircularLinkedList.cpp in Sources */,
+				4769E1D91DB0D7290014C1F9 /* StackByLinkedList.cpp in Sources */,
+				4769E1D41DB0D2AE0014C1F9 /* CircularDoublyLinkedList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
