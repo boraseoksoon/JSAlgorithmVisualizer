@@ -17,10 +17,10 @@
 #import "stack_by_array.h"
 #import "linked_queue.h"
 #import "queue_by_array.h"
+#import "knapsack.h"
 
 #include <time.h>
 #include <queue>
-
 
 using namespace std;
 
@@ -117,6 +117,13 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // Knapsack
+    int price_value[5] = {1, 10, 5, 100, 14};
+    int weight_value[5] = {1, 4, 2, 11, 6};
+    int Weight = 20; // Knapsack maximum : 10kg
+    int max_val = knapsack(3, Weight, price_value, weight_value);
+    printf("max price: %d\n", max_val);
     
     
     // C++ STL Queue test in Objective-C++.

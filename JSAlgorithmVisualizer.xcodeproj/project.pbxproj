@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4718F90E1DAE250300FE4196 /* TowerOfHanoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4718F90C1DAE250300FE4196 /* TowerOfHanoi.cpp */; };
+		472A80DE1DC1EE4600A11DE7 /* knapsack.c in Sources */ = {isa = PBXBuildFile; fileRef = 472A80DC1DC1EE4600A11DE7 /* knapsack.c */; };
 		4742F8071DA228DC0060A96A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4742F8061DA228DC0060A96A /* libc++.tbd */; };
 		4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */; };
 		4758B7901DA15BF4008653D2 /* CircularLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4758B78E1DA15BF4008653D2 /* CircularLinkedList.cpp */; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		4718F90C1DAE250300FE4196 /* TowerOfHanoi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TowerOfHanoi.cpp; sourceTree = "<group>"; };
 		4718F90D1DAE250300FE4196 /* TowerOfHanoi.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TowerOfHanoi.hpp; sourceTree = "<group>"; };
+		472A80DC1DC1EE4600A11DE7 /* knapsack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = knapsack.c; sourceTree = "<group>"; };
+		472A80DD1DC1EE4600A11DE7 /* knapsack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knapsack.h; sourceTree = "<group>"; };
 		4742F8061DA228DC0060A96A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		4758B78B1DA15BEC008653D2 /* DoubleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleLinkedList.cpp; sourceTree = "<group>"; };
 		4758B78C1DA15BEC008653D2 /* DoubleLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleLinkedList.h; sourceTree = "<group>"; };
@@ -117,6 +120,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		472A80D61DC1E97B00A11DE7 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Array;
+			sourceTree = "<group>";
+		};
+		472A80DB1DC1EE3000A11DE7 /* Knapsack */ = {
+			isa = PBXGroup;
+			children = (
+				472A80DC1DC1EE4600A11DE7 /* knapsack.c */,
+				472A80DD1DC1EE4600A11DE7 /* knapsack.h */,
+			);
+			name = Knapsack;
+			sourceTree = "<group>";
+		};
 		4742F8051DA228DC0060A96A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +310,7 @@
 		47CC89D21DACD83F00BB3585 /* Recursion */ = {
 			isa = PBXGroup;
 			children = (
+				472A80DB1DC1EE3000A11DE7 /* Knapsack */,
 				47CC89DB1DACDB4B00BB3585 /* TowerOfHanoi */,
 				47CC89D71DACDB3E00BB3585 /* Factorial */,
 				47CC89D31DACD84A00BB3585 /* FibonacciSequence */,
@@ -328,7 +348,7 @@
 		47EC8AEF1D9E53E900670F34 = {
 			isa = PBXGroup;
 			children = (
-				47EC8AFA1D9E53E900670F34 /* JSSAlgorithm */,
+				47EC8AFA1D9E53E900670F34 /* JSAlgorithmVisualizer */,
 				47EC8B141D9E53E900670F34 /* JSSAlgorithmTests */,
 				47EC8B1F1D9E53E900670F34 /* JSSAlgorithmUITests */,
 				47EC8AF91D9E53E900670F34 /* Products */,
@@ -346,7 +366,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		47EC8AFA1D9E53E900670F34 /* JSSAlgorithm */ = {
+		47EC8AFA1D9E53E900670F34 /* JSAlgorithmVisualizer */ = {
 			isa = PBXGroup;
 			children = (
 				47EC8B351D9E541B00670F34 /* Controller */,
@@ -355,6 +375,7 @@
 				47EC8B2E1D9E53F000670F34 /* Core */,
 				47EC8AFB1D9E53E900670F34 /* Supporting Files */,
 			);
+			name = JSAlgorithmVisualizer;
 			path = JSSAlgorithm;
 			sourceTree = "<group>";
 		};
@@ -399,23 +420,24 @@
 			isa = PBXGroup;
 			children = (
 				47EC8B311D9E540400670F34 /* Linear */,
-				47EC8B301D9E53FD00670F34 /* NonLinear */,
+				47EC8B301D9E53FD00670F34 /* Non-Linear */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
 		};
-		47EC8B301D9E53FD00670F34 /* NonLinear */ = {
+		47EC8B301D9E53FD00670F34 /* Non-Linear */ = {
 			isa = PBXGroup;
 			children = (
 				4769E1E11DB0E3AD0014C1F9 /* Graph */,
 				4769E1E01DB0E39C0014C1F9 /* Tree */,
 			);
-			name = NonLinear;
+			name = "Non-Linear";
 			sourceTree = "<group>";
 		};
 		47EC8B311D9E540400670F34 /* Linear */ = {
 			isa = PBXGroup;
 			children = (
+				472A80D61DC1E97B00A11DE7 /* Array */,
 				4758B7991DA160F7008653D2 /* Queue */,
 				4758B7981DA160F1008653D2 /* Stack */,
 				4758B7971DA160D9008653D2 /* List */,
@@ -635,6 +657,7 @@
 				4769E1E61DB0E8390014C1F9 /* linked_queue.c in Sources */,
 				4769E1E91DB0EA280014C1F9 /* queue_by_array.c in Sources */,
 				4769EA0B1DAF538D00CB4413 /* linkedlist.c in Sources */,
+				472A80DE1DC1EE4600A11DE7 /* knapsack.c in Sources */,
 				47EC8AFD1D9E53E900670F34 /* main.m in Sources */,
 				4758B78D1DA15BEC008653D2 /* DoubleLinkedList.cpp in Sources */,
 				4718F90E1DAE250300FE4196 /* TowerOfHanoi.cpp in Sources */,
