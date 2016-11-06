@@ -18,7 +18,6 @@
 		4769E1E61DB0E8390014C1F9 /* linked_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769E1E41DB0E8390014C1F9 /* linked_queue.c */; };
 		4769E1E91DB0EA280014C1F9 /* queue_by_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769E1E71DB0EA280014C1F9 /* queue_by_array.c */; };
 		4769EA0B1DAF538D00CB4413 /* linkedlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 4769EA091DAF538D00CB4413 /* linkedlist.c */; };
-		47906D301DC32E350045CC4E /* postfix_stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 47906D2E1DC32E350045CC4E /* postfix_stack.c */; };
 		47CC89D61DACD86500BB3585 /* Fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CC89D41DACD86500BB3585 /* Fibonacci.cpp */; };
 		47CC89DA1DACDB4900BB3585 /* Factorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CC89D81DACDB4900BB3585 /* Factorial.cpp */; };
 		47EC8AFD1D9E53E900670F34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC8AFC1D9E53E900670F34 /* main.m */; };
@@ -71,8 +70,6 @@
 		4769E1E81DB0EA280014C1F9 /* queue_by_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue_by_array.h; sourceTree = "<group>"; };
 		4769EA091DAF538D00CB4413 /* linkedlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linkedlist.c; sourceTree = "<group>"; };
 		4769EA0A1DAF538D00CB4413 /* linkedlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linkedlist.h; sourceTree = "<group>"; };
-		47906D2E1DC32E350045CC4E /* postfix_stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = postfix_stack.c; sourceTree = "<group>"; };
-		47906D2F1DC32E350045CC4E /* postfix_stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postfix_stack.h; sourceTree = "<group>"; };
 		47CC89D41DACD86500BB3585 /* Fibonacci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fibonacci.cpp; sourceTree = "<group>"; };
 		47CC89D51DACD86500BB3585 /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
 		47CC89D81DACDB4900BB3585 /* Factorial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Factorial.cpp; sourceTree = "<group>"; };
@@ -300,6 +297,7 @@
 		4769E1E31DB0E3B60014C1F9 /* BTree */ = {
 			isa = PBXGroup;
 			children = (
+				47BEFA671DC39F0C009B7BCD /* B+Tree */,
 			);
 			name = BTree;
 			sourceTree = "<group>";
@@ -322,10 +320,30 @@
 		47906D2D1DC32DDB0045CC4E /* StackPostFIxNotation */ = {
 			isa = PBXGroup;
 			children = (
-				47906D2E1DC32E350045CC4E /* postfix_stack.c */,
-				47906D2F1DC32E350045CC4E /* postfix_stack.h */,
 			);
 			name = StackPostFIxNotation;
+			sourceTree = "<group>";
+		};
+		47BEFA671DC39F0C009B7BCD /* B+Tree */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "B+Tree";
+			sourceTree = "<group>";
+		};
+		47BEFA681DC39F3F009B7BCD /* Heuristic */ = {
+			isa = PBXGroup;
+			children = (
+				47BEFA691DC3A178009B7BCD /* A* */,
+			);
+			name = Heuristic;
+			sourceTree = "<group>";
+		};
+		47BEFA691DC3A178009B7BCD /* A* */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "A*";
 			sourceTree = "<group>";
 		};
 		47CC89D21DACD83F00BB3585 /* Recursion */ = {
@@ -469,6 +487,7 @@
 		47EC8B321D9E540900670F34 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				47BEFA681DC39F3F009B7BCD /* Heuristic */,
 				4769EA081DAF51EE00CB4413 /* Backtracking */,
 				47CC89D21DACD83F00BB3585 /* Recursion */,
 			);
@@ -686,7 +705,6 @@
 				47CC89DA1DACDB4900BB3585 /* Factorial.cpp in Sources */,
 				4758B7901DA15BF4008653D2 /* CircularLinkedList.cpp in Sources */,
 				4769E1D91DB0D7290014C1F9 /* StackByLinkedList.cpp in Sources */,
-				47906D301DC32E350045CC4E /* postfix_stack.c in Sources */,
 				4769E1D41DB0D2AE0014C1F9 /* CircularDoublyLinkedList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

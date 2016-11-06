@@ -149,6 +149,7 @@ void displayArrayList(ArrayList* pList) {
             printf("[%d], %d\n", i, getALElement(pList,i)->data);
         }
         
+    
         i = pList->currentElementCount;
         for (; i<pList->maxElementCount; i++){
             printf("[%d] Empty!\n", i);

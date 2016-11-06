@@ -25,13 +25,21 @@ typedef struct ArrayListType {
 } ArrayList;
 
 ArrayList* createArrayList(int maxElementCount);
+    
 void deleteArrayList(ArrayList* pList);
+    
 int isArrayListFull(ArrayList* pList);
+    
 int addALElement(ArrayList* pList, int position, ArrayListNode element);
+    
 int removeALElement(ArrayList* pList, int position);
+    
 ArrayListNode* getALElement(ArrayList* pList, int position);
+    
 void displayArrayList(ArrayList* pList);
+    
 void clearArrayList(ArrayList* pList);
+    
 int getArrayListLength(ArrayList* pList);
 
 #ifdef __cplusplus

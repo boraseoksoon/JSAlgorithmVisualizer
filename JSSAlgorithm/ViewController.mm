@@ -18,7 +18,6 @@
 #import "linked_queue.h"
 #import "queue_by_array.h"
 #import "knapsack.h"
-#import "postfix_stack.h"
 
 #include <time.h>
 #include <queue>
@@ -118,8 +117,6 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    NSLog(@"parse_from_infix_to_postfix : %s\n", parse_from_infix_to_postfix("(3+4)*6+7"));
     
     // Knapsack
     int price_value[5] = {1, 10, 5, 100, 14};
@@ -222,17 +219,25 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
         ArrayListNode node;
         
         // List initialization : 1,3,5 add.
-        node.data = 1;
+        node.data = 0;
         addALElement(pList, 0, node);
         
-        node.data = 3;
+        node.data = 1;
         addALElement(pList, 1, node);
         
-        node.data = 5;
+        node.data = 2;
         addALElement(pList, 2, node);
+        /*
+        node.data = 3;
+        addALElement(pList, 3, node);
+        */
+        
+        node.data = 4;
+        addALElement(pList, 4, node);
         
         displayArrayList(pList);
         
+        /*
         // remove the first element
         removeALElement(pList, 0);
         displayArrayList(pList);
@@ -245,6 +250,7 @@ const NSArray* datalist = @[@"Algorithm", @"DataStructure"];
         }
         
         deleteArrayList(pList);
+        */
     }
     
     __int32_t num;
